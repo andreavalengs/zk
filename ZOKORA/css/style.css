@@ -1,0 +1,795 @@
+/* --- RESET Y ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #FAF6F0;
+    color: #4A4541;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- HEADER (Logo izquierda, Menú derecha) --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 60px;
+    background-color: #F5EFEB;
+    border-bottom: 1px solid #E8DFD8;
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #2C2623;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.main-header a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #6B635D;
+    transition: color 0.3s ease;
+}
+
+.main-header a:hover {
+    color: #2C2623;
+}
+
+/* --- BANNER INICIAL FULL-WIDTH (Ancho completo real) --- */
+.welcome-banner {
+    width: 100%;
+    margin-top: 40px; /* Separación elegante respecto al header */
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.welcome-banner h2 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 25px; /* Espacio entre el texto y el mosaico de imágenes */
+    color: #7D746D;
+}
+
+.banner-grid-full {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 420px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.banner-grid-full img {
+    width: 33.333%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.home-container {
+    flex: 1;
+    padding: 0 40px 60px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.inspiration-section {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.inspiration-section h3 {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #7D746D;
+}
+
+.inspiration-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inspiration-grid img {
+    width: 31%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.auth-promo-section {
+    background-color: #F5EFEB;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.auth-promo-section h3 {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #5C544F;
+}
+
+.quick-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 420px;
+    margin: 0 auto 20px auto;
+}
+
+.quick-login-form input {
+    padding: 14px 18px;
+    border: 1px solid #D8CEC4;
+    border-radius: 4px;
+    background-color: #FFF;
+    font-size: 0.85rem;
+    font-family: 'Cinzel', serif;
+}
+
+.quick-login-form button {
+    padding: 14px;
+    background-color: #D6C7BC;
+    color: #332F2C;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: background-color 0.3s;
+}
+
+.quick-login-form button:hover {
+    background-color: #C5B5A8;
+}
+
+.register-prompt {
+    font-size: 0.85rem;
+    color: #7D746D;
+}
+
+.register-prompt a {
+    color: #4A4541;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFE8E1;
+    padding: 60px 40px;
+    border-top: 1px solid #E2D7CC;
+    font-size: 0.8rem;
+}
+
+.footer-col h3 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2C2623;
+}
+
+.footer-col h4 {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #332F2C;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #7D746D;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #2C2623;
+}
+/* --- SECCIÓN DE REGISTRO --- */
+.register-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.register-card {
+    background-color: #F5EFEB;
+    padding: 50px 60px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border: 1px solid #E8DFD8;
+}
+
+.register-card h2 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #2C2623;
+    font-weight: 700;
+}
+
+.register-subtitle {
+    font-size: 0.85rem;
+    color: #7D746D;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Grid para los botones sociales */
+.social-login-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    padding: 12px 20px;
+    background-color: #FFF;
+    border: 1px solid #D8CEC4;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    color: #4A4541;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #FAF6F0;
+}
+
+/* Formulario */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.register-form input {
+    padding: 14px 18px;
+    border: 1px solid #D8CEC4;
+    border-radius: 4px;
+    background-color: #FFF;
+    font-size: 0.85rem;
+    font-family: 'Cinzel', serif;
+    color: #4A4541;
+}
+
+.register-form input::placeholder {
+    color: #A39B93;
+}
+
+.submit-btn {
+    padding: 14px;
+    background-color: #D6C7BC;
+    color: #332F2C;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #C5B5A8;
+}
+
+.login-prompt {
+    font-size: 0.8rem;
+    color: #7D746D;
+}
+
+.login-prompt a {
+    color: #4A4541;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* --- ESTILOS PARA LOS BOTONES SOCIALES CON ICONOS --- */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #FFF;
+    border: 1px solid #D8CEC4;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    color: #4A4541;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.social-btn:hover {
+    background-color: #FAF6F0;
+}
+/* --- SECCIÓN DE CONTACTO --- */
+.contact-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.contact-card {
+    background-color: #F5EFEB;
+    padding: 50px 60px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border: 1px solid #E8DFD8;
+}
+
+.contact-card h2 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #2C2623;
+    font-weight: 700;
+}
+
+.contact-subtitle {
+    font-size: 0.85rem;
+    color: #7D746D;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 18px;
+    border: 1px solid #D8CEC4;
+    border-radius: 4px;
+    background-color: #FFF;
+    font-size: 0.85rem;
+    font-family: 'Cinzel', serif;
+    color: #4A4541;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #A39B93;
+}
+/* --- SECCIÓN MIS COLECCIONES (CUADRÍCULA DE TARJETAS) --- */
+.collections-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 50px 80px 50px;
+}
+
+.collections-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.search-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.search-wrapper input {
+    width: 380px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #C5B5A8;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: 'Cinzel', serif;
+    color: #4A4541;
+    text-align: center;
+    outline: none;
+}
+
+.search-wrapper input::placeholder {
+    color: #8C827B;
+}
+
+.user-profile-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-circle {
+    width: 42px;
+    height: 42px;
+    background-color: #E2D7CE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #5A524C;
+    font-size: 1.1rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #2C2623;
+    letter-spacing: 0.5px;
+}
+
+.user-stats {
+    font-size: 0.7rem;
+    color: #8C827B;
+    font-family: 'Cinzel', serif;
+}
+
+.collections-tabs {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E8DFD8;
+    padding-bottom: 10px;
+}
+
+.tab-link {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #A39B93;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.tab-link.active-tab {
+    color: #2C2623;
+    border-bottom: 2px solid #2C2623;
+    padding-bottom: 8px;
+    margin-bottom: -11px;
+}
+
+/* Cuadrícula de 4 columnas para las colecciones */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.collection-card {
+    background-color: #FFFFFF;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #E8DFD8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Disposición interna de las imágenes en la tarjeta (imagen grande izquierda, dos pequeñas derecha) */
+.collection-preview-grid {
+    display: flex;
+    gap: 8px;
+    height: 220px;
+}
+
+.col-main-img {
+    flex: 2;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.col-main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-sub-imgs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+
+.col-sub-imgs img {
+    width: 100%;
+    height: calc(50% - 4px);
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.collection-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #2C2623;
+    margin-bottom: 2px;
+}
+
+.collection-info p {
+    font-size: 0.75rem;
+    color: #8C827B;
+    font-family: 'Cinzel', serif;
+}
+.filter-tag-btn {
+    background-color: #F4EBE2;
+    border: 1px solid #D6C8BC;
+    border-radius: 20px;
+    padding: 9px 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4A4541;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.filter-tag-btn:hover {
+    background-color: #EADFD5;
+    border-color: #C5B5A8;
+}
+/* --- SECCIÓN PERFIL --- */
+.profile-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 50px 80px 50px;
+}
+
+.profile-header-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.profile-avatar-large {
+    width: 90px;
+    height: 90px;
+    background-color: #E2D7CE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #5A524C;
+    font-size: 2.2rem;
+    border: 2px solid #D6C8BC;
+}
+
+.profile-details h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #2C2623;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.profile-username {
+    font-size: 0.85rem;
+    color: #8C827B;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 6px;
+}
+
+.profile-stats-text {
+    font-size: 0.8rem;
+    color: #5A524C;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+/* Cuadrícula compacta para los pines del perfil en cascada simétrica */
+.profile-pins-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pin-item {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #E8DFD8;
+    height: 260px;
+}
+
+.pin-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* --- ESTILO PARA EL BOTÓN DE CERRAR SESIÓN --- */
+.logout-btn {
+    color: #8C5347; /* Un tono sutil terracota/marrón suave para indicar salida */
+    border-color: #D8C3BC;
+}
+
+.logout-btn:hover {
+    background-color: #F8EDE9;
+    border-color: #C8A8A0;
+}
+/* --- SECCIÓN EXPLORAR --- */
+.explore-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 50px 80px 50px;
+}
+
+/* Barra de búsqueda superior */
+.explore-search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.explore-search-bar input {
+    width: 450px;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid #C5B5A8;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: 'Cinzel', serif;
+    color: #4A4541;
+    text-align: center;
+    outline: none;
+}
+
+.explore-search-bar input::placeholder {
+    color: #8C827B;
+}
+
+/* Botones de Categorías / Filtros con icono actualizar */
+.category-header-top,
+.category-title-bar {
+    margin-bottom: 20px;
+}
+
+.filter-tag-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5EFEB;
+    border: 1px solid #D8CEC4;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #4A4541;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.filter-tag-btn img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+/* Cuadrículas de imágenes estilo tarjeta */
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.explore-card {
+    background-color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #E8DFD8;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

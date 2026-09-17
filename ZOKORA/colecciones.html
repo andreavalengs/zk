@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zokora - Mis Colecciones</title>
+    <!-- Importación de tipografía Cinzel desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html"><h1>ZOKORA</h1></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="explorar.html">EXPLORAR</a></li>
+                <li><a href="colecciones.html" class="active">MIS COLECCIONES</a></li>
+                <li><a href="perfil.html">PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: MIS COLECCIONES -->
+    <main class="collections-container">
+        
+        <!-- Barra superior de búsqueda y perfil -->
+        <div class="collections-top-bar">
+            <div class="action-buttons">
+                <button class="filter-tag-btn">TU INSPIRACIÓN</button>
+                <button class="filter-tag-btn">CREAR</button>
+            </div>
+            
+            <div class="search-wrapper">
+                <input type="text" placeholder="Buscar">
+            </div>
+
+            <div class="user-profile-badge">
+                <div class="avatar-circle">A</div>
+                <div class="user-info">
+                    <span class="user-name">Andrea Valentina</span>
+                    <span class="user-stats">100 seguidores | 435 seguidos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pestañas de Navegación Interna -->
+        <div class="collections-tabs">
+            <a href="#" class="tab-link">PINES</a>
+            <a href="#" class="tab-link active-tab">COLECCIONES</a>
+        </div>
+
+        <!-- Cuadrícula de Tarjetas de Colecciones -->
+        <div class="collections-grid">
+            
+            <!-- Colección 1: Meditacion -->
+            <div class="collection-card">
+                <div class="collection-preview-grid">
+                    <div class="col-main-img"><img src="img/meditacion.png" alt="Meditacion 1"></div>
+                    <div class="col-sub-imgs">
+                        <img src="img/meditacion2.png" alt="Meditacion 2">
+                        <img src="img/meditacion3.png" alt="Meditación 3">
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>MEDITACIÓN</h3>
+                    <p>8 pines</p>
+                </div>
+            </div>
+
+            <!-- Colección 2: Rutina de Pilates -->
+            <div class="collection-card">
+                <div class="collection-preview-grid">
+                    <div class="col-main-img"><img src="img/pilates1.png" alt="Pilates 1"></div>
+                    <div class="col-sub-imgs">
+                        <img src="img/pilates2.png" alt="Pilates 2">
+                        <img src="img/pilates3.png" alt="Pilates 3">
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>RUTINA DE PILATES</h3>
+                    <p>5 pines</p>
+                </div>
+            </div>
+
+            <!-- Colección 3: Rutina de Piernas -->
+            <div class="collection-card">
+                <div class="collection-preview-grid">
+                    <div class="col-main-img"><img src="img/piernas1.png" alt="Piernas 1"></div>
+                    <div class="col-sub-imgs">
+                        <img src="img/piernas2.png" alt="Piernas 2">
+                        <img src="img/piernas3.png" alt="Piernas 3">
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>RUTINA DE PIERNAS</h3>
+                    <p>11 pines</p>
+                </div>
+            </div>
+
+            <!-- Colección 4: Almuerzos -->
+            <div class="collection-card">
+                <div class="collection-preview-grid">
+                    <div class="col-main-img"><img src="img/almuerzo1.png" alt="Almuerzo 1"></div>
+                    <div class="col-sub-imgs">
+                        <img src="img/almuerzo2.png" alt="Almuerzo 2">
+                        <img src="img/almuerzo3.png" alt="Almuerzo 3">
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>ALMUERZOS</h3>
+                    <p>14 pines</p>
+                </div>
+            </div>
+
+            <!-- Colección 5: Desayunos (Abajo a la izquierda) -->
+            <div class="collection-card">
+                <div class="collection-preview-grid">
+                    <div class="col-main-img"><img src="img/desayuno1.png" alt="Desayuno 1"></div>
+                    <div class="col-sub-imgs">
+                        <img src="img/desayuno2.png" alt="Desayuno 2">
+                        <img src="img/desayuno3.png" alt="Desayuno 3">
+                    </div>
+                </div>
+                <div class="collection-info">
+                    <h3>DESAYUNOS</h3>
+                    <p>15 pines</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-col">
+            <h3>ZOKORA</h3>
+        </div>
+        <div class="footer-col">
+            <h4>Informacion corporativa</h4>
+            <ul>
+                <li><a href="#">Acerca de Zokora</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Empleo</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Comunidad y Negocios</h4>
+            <ul>
+                <li><a href="#">Recursos para creadores</a></li>
+                <li><a href="#">Zokora Business</a></li>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="#">Ideas</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legalidad y Soporte</h4>
+            <ul>
+                <li><a href="#">Condiciones del servicio</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Directrices de la comunidad</a></li>
+                <li><a href="contacto.html">Centro de asistencia</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Social</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Threads</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
